@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Jogo da velha </title>
+    <link rel="stylesheet" href="estilo8.css">
+</head>
+<body>
+    <div class="painel">
+        <h2 id="nome"> Jogo da Velha</h2>
+        <span class="texto" id="jogador1"></span>
+        <span class="contra"> Vs </span>
+        <span class="texto" id="jogador2"></span>
+        <table class="jogo" border="2">
+            <tr>
+                <td class="quadrado" onclick="jogar(this)"></td>
+                <td class="quadrado" onclick="jogar(this)"></td>
+                <td class="quadrado" onclick="jogar(this)"></td>
+               
+            </tr>
+
+            <tr>
+                <td class="quadrado" onclick="jogar(this)"></td>
+                <td class="quadrado" onclick="jogar(this)"></td>
+                <td class="quadrado" onclick="jogar(this)"></td>
+            </tr>
+
+            <tr>
+                <td class="quadrado" onclick="jogar(this)"></td>
+                <td class="quadrado" onclick="jogar(this)"></td>
+                <td class="quadrado" onclick="jogar(this)"></td>
+            </tr>
+
+        </table>
+        <button class="botao" onclick="reiniciar()"> REINICIAR </button>
+        <button class="botaoD" onclick="sortear()"> SORTEAR </button>
+
+
+        <br>
+        <label class="etiqueta"> Nome: </label>
+        <input class="entrada" type="text" id="nome">
+        <button onclick="adicionar()"> Adicionar</button>
+
+    </div>
+    <img src="images/CONTROLE.png" alt="controle esquerdo" class="controle controle-esquerdo">
+    <img src="images/CONTROLE.png" alt="controle direito" class="controle controle-direito">
+    <img src="images/CONTROLE.gif" alt="mario" class="caminhada">
+
+    <img src="images/CONTROLE (2).gif" alt="bowser" class="caminhada-tres">
+    <img src="images/CONTROLE (3).gif" alt="koop" class="caminhada-quatro">
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
+
+
