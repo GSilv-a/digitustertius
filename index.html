@@ -3,56 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Jogo da velha </title>
-    <link rel="stylesheet" href="estilo8.css">
+    <title> CALCULADORA ONLINE </title>
+    <link rel="stylesheet" href="estilo7.css">
 </head>
 <body>
+    
+    <!-- um espaço que vai entrar a calculadora -->
     <div class="painel">
-        <h2 id="nome"> Jogo da Velha</h2>
-        <span class="texto" id="jogador1"></span>
-        <span class="contra"> Vs </span>
-        <span class="texto" id="jogador2"></span>
-        <table class="jogo" border="2">
-            <tr>
-                <td class="quadrado" onclick="jogar(this)"></td>
-                <td class="quadrado" onclick="jogar(this)"></td>
-                <td class="quadrado" onclick="jogar(this)"></td>
-               
-            </tr>
+        <h1 id="titulo"> CALCULADORA ONLINE </h1>
 
-            <tr>
-                <td class="quadrado" onclick="jogar(this)"></td>
-                <td class="quadrado" onclick="jogar(this)"></td>
-                <td class="quadrado" onclick="jogar(this)"></td>
-            </tr>
+        <p id="opcao"> Digite um número: </p>
 
-            <tr>
-                <td class="quadrado" onclick="jogar(this)"></td>
-                <td class="quadrado" onclick="jogar(this)"></td>
-                <td class="quadrado" onclick="jogar(this)"></td>
-            </tr>
-
-        </table>
-        <button class="botao" onclick="reiniciar()"> REINICIAR </button>
-        <button class="botaoD" onclick="sortear()"> SORTEAR </button>
-
-
-        <br>
-        <label class="etiqueta"> Nome: </label>
-        <input class="entrada" type="text" id="nome">
-        <button onclick="adicionar()"> Adicionar</button>
+        <!-- input = enviar algum dado! -->
+        <!-- tipo numérico -->
+        <input type="number" id="n1" placeholder="Digite o primeiro número!">
+        <p id="opcao2"> Digite um numéro: </p>
+        <!-- placeholder = texto fantasma -->
+        <input type="number" id="n2" placeholder="Digite o segundo número!">
+        <br> <br> 
+        <button class="botao" onclick="somar()"> = </button>
+        <button class="botao" onclick="subtrair()"> - </button>
+        <button class="botao" onclick="multiplicar()"> x </button>
+        <button class="botao" onclick="dividir()"> : </button>
+        <br><br><br>
+        <button class="botao" onclick="limpar()"> Limpar </button>
+        <br> <br>
+        
+        <div id="resultado"></div>
 
     </div>
-    <img src="images/CONTROLE.png" alt="controle esquerdo" class="controle controle-esquerdo">
-    <img src="images/CONTROLE.png" alt="controle direito" class="controle controle-direito">
-    <img src="images/CONTROLE.gif" alt="mario" class="caminhada">
+    
+    <div>
+        <img src="images/ARVORE.png" alt="arvore" class="arvore">
+        <img src="images/ARVORE.png" alt="arvore" class="arvore2">
 
-    <img src="images/CONTROLE (2).gif" alt="bowser" class="caminhada-tres">
-    <img src="images/CONTROLE (3).gif" alt="koop" class="caminhada-quatro">
+    </div>
     
-    <script src="script.js"></script>
     
+    
+    
+    
+    
+    
+    
+    
+<script src="script7.js"></script>
 </body>
 </html>
-
-

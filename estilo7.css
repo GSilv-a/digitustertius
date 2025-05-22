@@ -1,0 +1,116 @@
+body{
+    background-image: url("images/CAPA CALCULADORA.gif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no repeat;
+    background-attachment: fixed;
+    
+}
+
+.painel{
+    /* borda */
+    border: 10px solid rgb(0, 160, 48);
+    /* alinhar texto */
+    text-align: center;
+    /* largura da div */
+    width: 600px;
+    margin: auto;
+    /* altura */
+    height: 500px;
+    /* arredondar bordas */
+    border-radius: 5px;
+    /* cor de fundo */
+    background-color: rgba(0, 0, 0, 0.336);
+    
+    
+
+}
+
+#titulo{
+    color: white;
+    font-family: 'Noto Sans JP' sans-serif;
+    font-size: 40px;
+    text-shadow: 2px 2px 15px rgb(0, 206, 17);
+    
+}
+
+@keyframes trocaCor{
+   0%{
+    color: white;
+    /* cor inicial */
+   } 
+   25%{
+    color: green;
+    /* cor meio-inicio */
+   }
+   50%{
+    color: rgb(0, 255, 0);
+    /* cor meio */
+   }
+   75%{
+    color: rgb(140, 247, 41);
+    /* cor meio final */
+   }
+   100%{
+    color: rgb(210, 255, 127);
+    /* cor final */
+   }
+}
+
+h1 {
+    font-size: 2rem;
+    animation: trocaCor 3s infinite;
+    /* 3 segundos de duração e loop infinito  */
+}
+
+#opcao{
+    font-family:'Courier New', Courier, monospace;
+    color: aliceblue;
+    font-size: 30px;
+    text-shadow: 2px 2px 15px rgb(0, 206, 17)
+}
+
+#opcao2{
+    font-family:'Courier New', Courier, monospace;
+    color: aliceblue;
+    font-size: 30px;
+    text-shadow: 2px 2px 15px rgb(0, 206, 17);
+}
+
+input{
+    /* arredondar */
+    border-radius: 10px ;
+    /* altura */
+    height: 25px;
+    /* largura */
+    width: 300px;
+    /* centralizar */
+    text-align: center;
+    font-family: 'Noto Sans JP' sans-serif;
+    box-shadow: 2px 2px 15px 1px rgb(0, 255, 115);
+}
+
+
+
+
+.botao{
+    border-radius: ;
+    padding: 7px;
+    height: 30px;
+    width: 80px;
+    background-color: rgb(0, 100, 0);
+    box-shadow: 2px 2px 15px 1px rgb(0, 255, 115);
+    color: rgb(24, 255, 24);
+    font-family: 'Noto Sans JP' sans-serif;
+}
+
+.arvore{
+    background-position: center;
+    width: 295px;
+}
+
+.arvore2{
+    background-position: center;
+    width: 295px;
+    margin-left: 68% ;
+}
